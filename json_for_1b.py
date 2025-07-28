@@ -11,8 +11,8 @@ combined_sections = []
 def run():
     model = lgb.Booster(model_file='lightgbm_model.txt')
 
-    # Directory containing PDFs (relative to current script)
-    input_dir = "PDFs"
+    # Directory containing PDFs (relative to /app/input when mounted)
+    input_dir = "input/PDFs"
 
     label_map = {0: 'Title', 1: 'Section-header', 2: 'Text'}
 

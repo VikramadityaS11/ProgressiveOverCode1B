@@ -13,7 +13,7 @@ with open("sections.json", "r", encoding="utf-8") as f:
 """
 sections = json_for_1b.combined_sections
 
-with open("challenge1b_input.json", "r", encoding="utf-8") as f:
+with open("input/challenge1b_input.json", "r", encoding="utf-8") as f:
     challenge = json.load(f)
 
 persona = challenge["persona"]["role"]
