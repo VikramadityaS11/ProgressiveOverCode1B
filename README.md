@@ -49,6 +49,15 @@ This system extracts the most relevant sections from documents tailored to a per
    
    **For Example:**  
    If the project is in `E:/some_directory/progressiveovercode1a`, then input files must be located at `/input`, similarly output is generated at `/output`
+
+4. For Docker based testing first build the image using
+   **Build Command**
+   `docker build --platform linux/amd64 -t <imgname> .`
+
+   **Run Command**
+   `docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output/progressiveovercode1b/:/app/output --network none <imgname>`
+
+   make sure to replace `$(pwd)/input` and `$(pwd)/output` with the appropriate document directories.
     
      
 
