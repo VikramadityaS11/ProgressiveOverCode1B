@@ -70,7 +70,7 @@ formatted_output = {
     ]
 }
 
-with open("challenge1b_output.json", "w", encoding="utf-8") as f:
+with open("output/challenge1b_output.json", "w", encoding="utf-8") as f:
     json.dump(formatted_output, f, indent=4, ensure_ascii=False)
 
 print("Output written to challenge1b_output.json")
