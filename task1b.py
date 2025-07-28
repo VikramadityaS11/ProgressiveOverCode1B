@@ -3,6 +3,7 @@ import time
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import json_for_1b
+import os
 
 json_for_1b.run()
 
@@ -69,7 +70,7 @@ formatted_output = {
         for r in top_k
     ]
 }
-
+os.makedirs("output", exist_ok=True)
 with open("output/challenge1b_output.json", "w", encoding="utf-8") as f:
     json.dump(formatted_output, f, indent=4, ensure_ascii=False)
 
