@@ -64,7 +64,7 @@ This system extracts the most relevant sections from documents tailored to a per
 
    make sure to replace `$(pwd)/input` and `$(pwd)/output` with the appropriate document directories.
 
-Publically available images at joshtheboss1902/docupersona2
+5. Publically available images at joshtheboss1902/docupersona2
     
      
 
