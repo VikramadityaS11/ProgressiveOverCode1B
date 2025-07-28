@@ -13,7 +13,7 @@ with open("sections.json", "r", encoding="utf-8") as f:
 """
 sections = json_for_1b.combined_sections
 
-with open("/Users/vikramadityasharma/Desktop/Adobe-India-Hackathon25/Challenge_1b/Collection 2/challenge1b_input.json", "r", encoding="utf-8") as f:
+with open("challenge1b_input.json", "r", encoding="utf-8") as f:
     challenge = json.load(f)
 
 persona = challenge["persona"]["role"]
@@ -70,7 +70,7 @@ formatted_output = {
     ]
 }
 
-with open("final_output_formatted.json", "w", encoding="utf-8") as f:
+with open("challenge1b_output.json", "w", encoding="utf-8") as f:
     json.dump(formatted_output, f, indent=4, ensure_ascii=False)
 
-print("Output written to final_output_formatted.json")
+print("Output written to challenge1b_output.json")

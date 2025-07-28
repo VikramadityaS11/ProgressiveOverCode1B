@@ -1,0 +1,7 @@
+pandas
+pymupdf
+lightgbm
+pdfplumber
+scikit-learn
+numpy
+sentence-transformers
