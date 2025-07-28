@@ -53,12 +53,14 @@ This system extracts the most relevant sections from documents tailored to a per
 4. For Docker based testing first build the image using
 
    **Build Command**
-   
-   `docker build --platform linux/amd64 -t <imgname> .`
+   ```
+   docker build --platform linux/amd64 -t <imgname> .
+   ```
 
    **Run Command**
-   
-   `docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output/progressiveovercode1b/:/app/output --network none <imgname>`
+   ```
+   docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output/progressiveovercode1b/:/app/output --network none <imgname>
+   ```
 
    make sure to replace `$(pwd)/input` and `$(pwd)/output` with the appropriate document directories.
     
